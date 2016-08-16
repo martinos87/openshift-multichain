@@ -1,4 +1,4 @@
-Name: neo4j
+Name: Multichain
 Cartridge-Short-Name: MULTICHAIN
 Display-Name: Multichain
 Description: "Multichain is a private blockchain implementation."
@@ -7,7 +7,7 @@ License: GNU GENERAL PUBLIC LICENSE
 License-Url: 
 Vendor: Tinu 
 Cartridge-Version: 0.0.1
-Cartridge-Vendor: neo4j
+Cartridge-Vendor: multichain
 Source-Url: https://github.com/martinos87/openshift-multichain.git
 Categories:
   - service
