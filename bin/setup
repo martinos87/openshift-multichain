@@ -6,6 +6,6 @@ for dir in tmp pid cache env; do
 	mkdir -p $dir
 done
 mkdir -p .multichain
-
+./$(pwd)/versions/1.0/multichain-util create chain1
 echo $(pwd)/versions/1.0/ > env/OPENSHIFT_RUBY_PATH_ELEMENT
 
