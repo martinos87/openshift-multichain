@@ -7,7 +7,7 @@ for dir in tmp pid cache env; do
 done
 mkdir -p .multichain
 
-if [ ! -f $(pwd)/.multichain/chain1/params.dat ]
+if [ ! -f $(pwd)/../.multichain/chain1/params.dat ]
 then
 	$(pwd)/versions/1.0/multichain-util create chain1 
 fi
