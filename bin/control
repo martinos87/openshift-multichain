@@ -31,7 +31,7 @@ function start() {
         exit 0
     fi
 
-    ${MULTICHAI_BIN_DIR}multichaind chain1 -deamon -rpcport=8080;
+#    ${MULTICHAI_BIN_DIR}multichaind chain1 -deamon -rpcport=8080;
 
 }
 
