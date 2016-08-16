@@ -48,7 +48,8 @@ Endpoints:
   - Private-IP-Name:   DB_HOST_WEB_HTTP
     Private-Port-Name: DB_PORT_WEB_HTTP
     Private-Port:      8081
-    Public-Port-Name: PROXY_PORT
+    Public-Port-Name:  CHAIN_PROXY_PORT
+    Protocols:         [http]
 Publishes:
   publish-db-connection-info:
     Type: "ENV:NET_TCP:db:connection-info"
