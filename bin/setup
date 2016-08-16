@@ -9,7 +9,7 @@ mkdir -p .multichain
 
 if [ ! -f $(pwd)/versions/1.0/.multichain/chain1/params.dat ]
 then
-	$(pwd)/versions/1.0/multichain-util create chain1 -datadir=$(pwd)/versions/1.0/.multichain/
+	$(pwd)/versions/1.0/multichain-util create chain1 -datadir=$(pwd)/versions/1.0/.multichain/chain1/
 fi
 
 echo $(pwd)/versions/1.0/ > env/OPENSHIFT_RUBY_PATH_ELEMENT
