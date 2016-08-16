@@ -31,7 +31,7 @@ function start() {
         exit 0
     fi
 
-#    ${MULTICHAI_BIN_DIR}multichaind chain1 -deamon -bind=$OPENSHIFT_MULTICHAIN_DB_HOST_WEB_HTTP -server=1 -rpcport=8081 -rpcallowip=$OPENSHIFT_MULTICHAIN_DB_HOST_WEB_HTTP;
+   ${MULTICHAI_BIN_DIR}multichaind chain1 -deamon -bind=$OPENSHIFT_MULTICHAIN_DB_HOST_WEB_HTTP -server=1 -rpcport=$OPENSHIFT_MULTICHAIN_DB_PORT_WEB_HTTP -rpcallowip=$OPENSHIFT_MULTICHAIN_DB_HOST_WEB_HTTP;
 
 }
 
