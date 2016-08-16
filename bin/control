@@ -40,7 +40,7 @@ function stop() {
 		echo "Multichain deamon is already stopped";
 		exit 0;
 	fi
-	${NEO4J_BIN_DIR}/multichain-cli chain1 stop
+	${MULTICHAIN_BIN_DIR}multichain-cli chain1 stop
 } 
 
 function restart() {
