@@ -1,17 +1,17 @@
 #!/bin/bash
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
-MULTICHAIN_BIN_DIR=${OPENSHIFT_MULTICHAIN_DIR}versions/1.0alpha23/
+MULTICHAIN_BIN_DIR=${OPENSHIFT_MULTICHAIN_DIR}versions/1.0/
 
 STOPTIMEOUT=10
 FMT="%a %b %d %Y %H:%M:%S GMT%z (%Z)"
-PID=${OPENSHIFT_MULTICHAIN_DIR}versions/1.0alpha23/run/multichain.pid
+PID=${OPENSHIFT_MULTICHAIN_DIR}versions/1.0/run/multichain.pid
 
 function is_running() {
     if [ -f $PID ]; then
-        local multichain_pid=`cat ${OPENSHIFT_MULTICHAIN_DIR}versions/1.0alpha23/run/multichain.pid`;
+        local multichain_pid=`cat ${OPENSHIFT_MULTICHAIN_DIR}versions/1.0/run/multichain.pid`;
         local multichain_proc_string=`ps aux | grep $multichain_pid | grep multichaind | grep -v grep`;
-        [ -z "$multichain_proc_string" ] && { rm -f ${OPENSHIFT_MULTICHAIN_DIR}versions/1.0alpha23/run/multichain.pid; return 1; }
+        [ -z "$multichain_proc_string" ] && { rm -f ${OPENSHIFT_MULTICHAIN_DIR}versions/1.0/run/multichain.pid; return 1; }
         return 0;
     fi
     return 1;

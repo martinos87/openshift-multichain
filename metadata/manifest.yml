@@ -2,7 +2,7 @@ Name: Multichain
 Cartridge-Short-Name: MULTICHAIN
 Display-Name: Multichain
 Description: "Multichain is a private blockchain implementation."
-Version: '1.0alpha23'
+Version: '1.0'
 License: GNU GENERAL PUBLIC LICENSE
 License-Url: 
 Vendor: Tinu 
