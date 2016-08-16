@@ -1,0 +1,11 @@
+#!/bin/bash -e
+
+set -u
+
+for dir in tmp pid cache dbs env; do
+	mkdir -p $dir
+done
+
+
+echo $(pwd)/versions/1.0alpha23/ > env/OPENSHIFT_RUBY_PATH_ELEMENT
+
