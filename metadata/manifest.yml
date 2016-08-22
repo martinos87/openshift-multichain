@@ -44,12 +44,18 @@ Provides:
 Scaling:
   Min: 1
   Max: 1
+Group-Overrides:
+- components:
+  . web-proxy
 Endpoints:
   - Private-IP-Name:   DB_HOST_WEB_HTTP
     Private-Port-Name: DB_PORT_WEB_HTTP
     Private-Port:      8081
     Public-Port-Name:  CHAIN_PROXY_PORT
-    Protocols:         [http]
+    Protocols:         [http,tcp]
+    Mappings:
+    - Frontend: ''
+      Backend: ''
 Publishes:
   publish-db-connection-info:
     Type: "ENV:NET_TCP:db:connection-info"
