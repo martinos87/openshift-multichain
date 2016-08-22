@@ -50,7 +50,7 @@ Group-Overrides:
 Endpoints:
   - Private-IP-Name:   DB_HOST_WEB_HTTP
     Private-Port-Name: DB_PORT_WEB_HTTP
-    Private-Port:      8081
+    Private-Port:      8085
     Public-Port-Name:  CHAIN_PROXY_PORT
     Protocols:         [http,tcp]
     Mappings:
