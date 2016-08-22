@@ -46,7 +46,7 @@ Scaling:
   Max: 1
 Group-Overrides:
 - components:
-  . web-proxy
+  - web-proxy
 Endpoints:
   - Private-IP-Name:   DB_HOST_WEB_HTTP
     Private-Port-Name: DB_PORT_WEB_HTTP
